@@ -33,8 +33,6 @@ public static class Algo
     }
     public static void MergeSort<T>(ref T[] arr) where T : IComparable<T>
     {
-        //@TODO we here assume that the array is actually can be devided by two.
-        //@TODO do checks if it can work like if array > 0, if array can be equally devided into two parts etc.
         MergeSort<T>(ref arr, 0, arr.Length - 1);
     }
     public static void MergeSort<T>(ref T[] arr, int startIndex, int endIndex) where T : IComparable<T>
